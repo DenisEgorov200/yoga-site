@@ -1,0 +1,35 @@
+.btn {
+	display: inline-block;
+	padding: 12px 14px;
+
+	font-family: $Main-Font;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+	color: $black;
+	background: $white;
+	border-radius: 3px;
+
+	transition: all 0.4s ease-in-out;
+
+	&:hover {
+		background: $black;
+		color: $white;
+	}
+
+	&-gray {
+		background: #595959;
+		color: $white;
+	}
+
+	&-black {
+		background: $black;
+		color: $white;
+
+		&:hover {
+			background: $light-gray;
+			color: $black;
+		}
+	}
+}

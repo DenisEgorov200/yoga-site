@@ -1,0 +1,64 @@
+.header {
+	position: relative;
+	padding: 40px 0;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__nav {
+		display: flex;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		&-info {
+			padding: 0 27px 0 0;
+			border-right: 1px solid $light-gray;
+		}
+
+		svg {
+			transition: transform 0.2s linear;
+		}
+
+		&:hover svg {
+			transform: translateY(5px);
+		}
+
+		&:not(:last-child) {
+			margin: 0 27px 0 0;
+		}
+	}
+
+	&__link {
+		font-family: $Main-Font;
+		font-size: 15px;
+		line-height: 20px;
+		color: $black;
+
+		&:link {
+			text-decoration: solid;
+		}
+
+		&:visited {
+			text-decoration: solid;
+		}
+	}
+
+	&__icon {
+		width: 13px;
+		height: 14px;
+	}
+
+	&__logo {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+	}
+}
